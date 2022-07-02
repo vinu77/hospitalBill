@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Bill</title>
+    <link rel="stylesheet" href="./hospital.css">
+</head>
+<body>
+    <section id="billMain">
+        <article>
+            <aside class="top">
+                <h1>hospital bill</h1>
+                <div class="data">
+                    <form action="">
+                        <div>
+                            <label for="patientName">Patient Name:</label>
+                            <input type="text" name="patientName" id="patientName" placeholder="Enter Patient Name">
+                        </div>
+                        <div>
+                            <label for="test">Type of Test:</label>
+                            <input type="" name="test" id="test" placeholder="Enter type of Test">
+                        </div>
+                        <div>
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+            <main class="bottom">
+                <aside class="left">
+      
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SL NO</th>
+                                    <th>Hospital Facility</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bill_details"></tbody>
+                        </table>
+                    
+                </aside>
+
+                <aside class="right">
+                    <h1>Patient Name : <span class="pname"></span></h1>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sl NO</th>
+                                <th>Description</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody class="billToPay"></tbody>
+                    </table>
+
+                    <h2>Total : <span class="total"></span></h2>
+                </aside>
+            </main>
+        </article>
+    </section>
+
+    <script src="./hospitalBill.js"></script>
+</body>
+</html>
